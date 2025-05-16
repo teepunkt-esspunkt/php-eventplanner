@@ -1,7 +1,0 @@
-<div class="paginator">
-                <a href="<?= $_SERVER['PHP_SELF'] ?>?seite=1">&lt;&lt;</a>
-                <a href="<?= $_SERVER['PHP_SELF'] ?>?seite=<?= $_SESSION['veranstaltungen_seite'] > 1 ? ($_SESSION['veranstaltungen_seite'] - 1) : 1 ?>">&lt;</a>
-                <a href="<?= $_SERVER['PHP_SELF'] ?>?seite=<?= $_SESSION['veranstaltungen_seite'] ?>"><?= $_SESSION['veranstaltungen_seite'] ?> / <?= $seiten ?></a>
-                <a href="<?= $_SERVER['PHP_SELF'] ?>?seite=<?= $_SESSION['veranstaltungen_seite'] < $seiten ? ($_SESSION['veranstaltungen_seite'] + 1) : $seiten ?>">&gt;</a>
-                <a href="<?= $_SERVER['PHP_SELF'] ?>?seite=<?= $seiten ?>">&gt;&gt;</a>
-            </div>
